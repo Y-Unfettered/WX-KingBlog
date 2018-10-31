@@ -1,0 +1,16 @@
+<view class='container'>
+  <view class='bg-1 dw'>
+    <image class='login border adw"' src="{{userInfo.avatarUrl}}"></image>
+    <text class='wdw'>{{userInfo.nickName}}</text>
+  </view>
+  <view class=' margin-top40 bg-1'>
+    <text>还待开发</text>
+  </view>
+  <view class=' margin-top20 bg-1'>
+    <text>敬请期待</text>
+  </view>
+  <view class=' margin-top20 bg-1'>
+
+  </view>
+
+</view>

@@ -1,0 +1,124 @@
+/* pages/loading/loading.wxss */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #b3d4db;
+}
+
+page {
+  height: 100%;
+  background-color: #b3d4db;
+}
+
+.border {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  border: 2px solid #fff;
+}
+
+.margin-top200 {
+  margin-top: 200rpx;
+}
+
+.margin-top100 {
+  margin-top: 100rpx;
+}
+
+.Typeface_Arial {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.word_32size {
+  font-size: 32rpx;
+}
+
+.word_22size {
+  font-size: 22rpx;
+}
+
+.Thickening {
+  font-weight: bold;
+}
+
+.login {
+  width: 200rpx;
+  height: 200rpx;
+}
+
+.moto-container {
+  border: 1rpx #405f80 solid;
+  height: 80rpx;
+  width: 200rpx;
+  border-radius: 5rpx;
+  text-align: center;
+  margin-top: 200rpx;
+}
+
+.moto {
+  color: #405f80;
+  line-height: 80rpx;
+}
+
+.mask {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #000;
+  z-index: 9000;
+  opacity: 0.7;
+}
+.color{
+  color: #405f80;
+}
+.modalDlg {
+  width: 580rpx;
+  height: 620rpx;
+  position: fixed;
+  top: 50%;
+  left: 0;
+  z-index: 9999;
+  margin: -370rpx 85rpx;
+  background-color: #fff;
+  border-radius: 36rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tanchaung {
+  margin: 50rpx auto 10px;
+}
+
+.box {
+  width: 520rpx;
+  margin-top: 20px;
+  /* border-radius: 30rpx; */
+  overflow: hidden;
+}
+
+.box image {
+  width: 100%;
+}
+
+.btn {
+  width: 580rpx;
+}
+
+.btn-1 {
+  display: inline-block;
+}
+
+.btn-1-l {
+  float: left;
+  margin-left: 80rpx;
+}
+
+.btn-1-r {
+  float: right;
+  margin-right: 80rpx;
+}

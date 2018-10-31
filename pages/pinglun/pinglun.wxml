@@ -1,0 +1,43 @@
+<template name="pinglun">
+  <!-- 评论 -->
+  <view class='box-4'>
+    <view class='box-4-1'>
+      <!-- 一条评论 -->
+      <view class='box-4-1-1'>
+        <!-- 头像 -->
+        <view class='box-4-1-1-1'>
+          <image src='{{item.userSrc}}'></image>
+        </view>
+        <!-- name -->
+        <view class='box-4-1-1-2'>
+          <text>{{item.user}}</text>
+        </view>
+        <!-- 时间 -->
+        <view class='box-4-1-1-3'>
+          <text>{{item.updatedAt}}</text>
+        </view>
+        <!-- 评论内容 -->
+        <view class='box-4-1-1-4'>
+          <text>{{item.title}}</text>
+        </view>
+        <!-- 同意 -->
+        <view class='box-4-1-1-5' bind:tap="changeStar">
+          <image src="../../img/赞.png"></image>          
+        </view>
+        <!-- 不同意 -->
+        <view class='box-4-1-1-6' bind:tap="changeFlower">
+          <image src="../../img/感谢.png"></image>
+        </view>
+        <view class='box-4-1-1-7'>
+          <view class='box-4-1-1-7-1'>
+            <text>{{item.star}}</text>
+          </view>
+          <view class='box-4-1-1-7-2'>
+            <text>{{item.flower}}</text>
+          </view>
+        </view>
+      </view>
+      <text></text>
+    </view>
+  </view>
+</template>

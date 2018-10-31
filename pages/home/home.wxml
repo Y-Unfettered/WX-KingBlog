@@ -1,0 +1,37 @@
+<!-- home.wxml -->
+<view class='container'>
+  <audio id='bgm'></audio>
+  <view class='audio rotate' wx:if="{{onPlay}}" style='background-image:url({{information.musicimg}})' bindtap='audioPause'></view>
+  <view class='audio' wx:if="{{onPause}}" style='background-image:url({{information.musicimg}})' bindtap='audioPlay'></view>
+  <view class="size">
+    <image src="http://bmob-cdn-21722.b0.upaiyun.com/2018/10/01/3d21363f40175f5a802f44b928f9eb42.jpg" mode="scaleToFill"></image>
+  </view>
+  <view class="jl">
+    <view class="bg">
+      <view class="border-b">
+        <text>Name:</text>
+        <text class='name'>{{information.name}}</text>
+      </view>
+      <view class="border-b">
+        <text>Phone:</text>
+        <text class='name'>{{information.phone}}</text>
+      </view>
+      <view class="border-b">
+      <!-- 空格的打法 使用全角就能打 -->
+        <text>Email:</text>
+        <text class='email'>{{information.qq}}</text>
+      </view>
+      <view class="border-b">
+        <text>Github:</text>
+        <text class="wz">{{information.github}}</text>
+      </view>
+      <view class="border-b">
+        <text>Motto:</text>
+        <text class='name'>{{information.motto}}</text>
+      </view>
+    </view>
+  </view>
+  <view class="bottom">
+    <text>Learn more about me</text>
+  </view>
+</view>

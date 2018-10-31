@@ -1,0 +1,42 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/loading/loading",
+    "pages/home/home",
+    "pages/reading/index",
+    "pages/post-detail/post-detail",
+    "pages/about/about"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#b3d4db",
+    "navigationBarTitleText": "K-Blog"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "Home",
+        "iconPath": "img/Home.png",
+        "selectedIconPath": "img/Homex.png"
+      },
+      {
+        "pagePath": "pages/reading/index",
+        "text": "Article",
+        "iconPath": "img/Article.png",
+        "selectedIconPath": "img/Articlex.png"
+      },
+      {
+        "pagePath": "pages/about/about",
+        "text": "Me",
+        "iconPath": "img/Me.png",
+        "selectedIconPath": "img/Mex.png"
+      }
+    ],
+    "backgroundColor": "#fff",
+    "color": "#ccc",
+    "selectedColor": "#000",
+    "borderStyle": "black"
+  }
+}

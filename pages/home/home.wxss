@@ -1,0 +1,125 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #b3d4db;
+  position: relative;
+  overflow: hidden;
+}
+
+page {
+  height: 100%;
+  background-color: #b3d4db;
+  overflow: hidden;
+}
+
+.audio {
+  width: 50rpx;
+  height: 50rpx;
+  border-radius: 50%;
+  border: 20rpx solid #000;
+  background-size: cover;
+  position: absolute;
+  top: 2%;
+  right: 10%;
+}
+
+.rotate {
+  animation: Move 10s linear;
+  animation-iteration-count: infinite;
+  z-index: 999;
+}
+
+@keyframes Move {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.size {
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  overflow: hidden;
+  margin-top: 80rpx;
+}
+
+.size image {
+  width: 100%;
+  height: 100%;
+}
+
+.jl {
+  width: 80%;
+  height: 600rpx;
+  background-color: #fff;
+  margin-top: 40rpx;
+  margin-bottom: 40rpx;
+  border-radius: 30rpx;
+  position: relative;
+}
+
+.jl .bg {
+  width: 80%;
+  height: 550rpx;
+  /*background-color: #f40;*/
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.jl .bg .border-b {
+  width: 100%;
+  height: 100rpx;
+  border-bottom: 1rpx solid #405f80;
+  position: relative;
+}
+
+.jl .bg .border-b text {
+  position: absolute;
+  bottom: 1rpx;
+  color: #405f80;
+}
+.jl .bg .border-b .email {
+   width: 800rpx;
+  font-size: 0.72em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-16%, 10%);
+  color: #405f80;
+}
+.jl .bg .border-b .name{
+  left: 120rpx;
+}
+
+.jl .bg .border-b .wz {
+  width: 800rpx;
+  font-size: 0.72em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-16%, 10%);
+  color: #405f80;
+}
+
+.bottom {
+  width: 100%;
+  height: 100rpx;
+  position: relative;
+}
+
+.bottom text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1em;
+  color: #405f80;
+}

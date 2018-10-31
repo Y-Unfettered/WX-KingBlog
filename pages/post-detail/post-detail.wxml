@@ -1,0 +1,58 @@
+<!-- <import src="../pinglun/pinglun.wxml" /> -->
+
+<view class='box'>
+  <!-- 头图 -->
+  <view class='box-1'>
+    <image src='{{content.bannerSrc}}'></image>
+  </view>
+  <!-- 标题 -->
+  <view class='box-2'>
+    <view class='box-2-1'>
+      <view class='box-2-1-1'>
+        <image src='{{content.authorImg}}'></image>
+      </view>
+      <view class='box-2-1-2'>
+        <text name="auther">{{content.author}}</text>
+      </view>
+      <view class='box-2-1-3'>
+        <text>发布于</text>
+      </view>
+      <view class='box-2-1-4'>
+        <text name="time">{{content.updatedAt}}</text>
+      </view>
+      <view class='box-2-1-5'>
+        <text name="title">{{content.title}}</text>
+      </view>
+    </view>
+  </view>
+  <!-- 内容 -->
+  <view class='box-3'>
+    <view class='box-3-1'>
+      <text>{{content.content}}</text>
+    </view>
+  </view>
+
+  <!-- 评论区 -->
+  <!-- <view class="pinglun">
+    <text>评论：</text>
+  </view>
+
+  <block wx:for="{{comment}}" wx:for-item="item" wx:for-index="idx" wx:key="sss">
+    <view data-postId="{{item.postId}}">
+      <template is="pinglun" data="{{item}}" />
+    </view>
+  </block>
+
+  <view class='box-5'>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <view class="weui-cell__bd">
+          <form bindsubmit='updata'>
+            <input class="weui-input input" placeholder="请输入文本" maxlength="50" name="title" />
+            <button class='btn' form-type='submit'>完成</button>
+          </form>
+        </view>
+      </view>
+    </view>
+  </view> -->
+</view>

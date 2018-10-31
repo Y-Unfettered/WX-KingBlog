@@ -1,0 +1,34 @@
+<!--index.wxml-->
+<import src="../post-item/post-item-template.wxml" />
+<view class="page">
+  <view class="page__bd">
+    <view class="weui-panel weui-panel_access">
+      <view>
+        <swiper catchtap="onSwiperTap"  indicator-dots='ture' autoplay='ture' interval='3000' circular='ture'>
+          <swiper-item>
+            <image class='size' src='http://bmob-cdn-21722.b0.upaiyun.com/2018/10/08/cb33b499401d7220806958b141e8b9f8.jpg' data-postId="0"></image>
+          </swiper-item>
+          <swiper-item>
+            <image class='size' src='http://bmob-cdn-21722.b0.upaiyun.com/2018/10/08/a2d87af240a5fccc80ec11f3fa46cc4e.png' data-postId="1"></image>
+          </swiper-item>
+          <swiper-item>
+            <image class='size' src='http://bmob-cdn-21722.b0.upaiyun.com/2018/10/08/473888234037873e80997ff9b9e800c2.jpg' data-postId="2"></image>
+          </swiper-item>
+        </swiper>
+      </view>
+      <!-- 内容 -->
+      <block wx:for="{{posetdata}}" wx:for-item="item" wx:for-index="idx" wx:key="neirong">
+        <view catchtap="onPostTap" data-postId="{{item.postId}}">
+          <template is="postItem" data="{{...item}}" />
+        </view>
+      </block>
+      <!-- 查看更多 -->
+      <view class="weui-panel__ft">
+        <view class="weui-cell weui-cell_access weui-cell_link">
+          <view class="weui-cell__bd">查看更多</view>
+          <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

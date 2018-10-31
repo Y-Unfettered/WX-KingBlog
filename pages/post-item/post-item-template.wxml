@@ -1,0 +1,11 @@
+<template name="postItem">
+  <view class='container'>
+    <view class='container_nav'>
+      <image class='container_image' src="{{avatar}}"></image>
+      <text class='Typeface_Arial'>{{updatedAt}}</text>
+    </view>
+    <text class='Typeface_Arial container_text1'>{{title}}</text>
+    <image class='container_image1' src='{{imgSrc}}'></image>
+    <text class='Typeface_Arial container_text2'>{{content}}</text>
+  </view>
+</template>

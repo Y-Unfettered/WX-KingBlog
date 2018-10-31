@@ -1,0 +1,19 @@
+<!--pages/loading/loading.wxml-->
+<view class='container'>
+  <image class='login margin-top200 border"' src="{{userInfo.userPic}}"></image>
+  <text class='Typeface_Arial word_32size Thickening margin-top100 color'>欢迎  {{userInfo.nickName}}</text>
+  <view class='moto-container word_22size Thickening' catchtap='onTap'>
+    <text class='moto'>欢迎参观K-Bolg</text>
+  </view>
+  <view class="mask" catchtouchmove="preventTouchMove" wx:if="{{showModal}}"></view>
+<view class="modalDlg" wx:if="{{showModal}}">
+  <view class="box">
+    <image src="http://bmob-cdn-21722.b0.upaiyun.com/2018/10/01/acb22b574036c93e8050cd18cd9136f0.png" mode="scaleToFill"></image>
+  </view>
+  <text wx:if="{{hasUserInfo}}" class='tanchaung'>是否允许获取您的信息</text>
+  <view class="btn">
+    <button class='btn-1 btn-1-l' open-type="getUserInfo" bindtap="getUserInfo">获取信息</button>
+    <button class='btn-1 btn-1-r' bindtap="noGetUserInfo" wx:if="{{hasUserInfo}}">不允许</button>
+  </view>
+</view>
+</view>
